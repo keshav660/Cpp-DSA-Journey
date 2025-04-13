@@ -1,22 +1,26 @@
 #include <iostream>
 using namespace std;
 
-void passByValue(int x) {
+void passByValue(int x)
+{
     x = x + 10;
     cout << "Inside passByValue: " << x << endl;
 }
 
-void passByReference(int* x) {
+void passByReference(int *x)
+{
     *x = *x + 10;
     cout << "Inside passByReference (with pointer): " << *x << endl;
 }
 
-void passByReferenceUsingRefVar(int& x) {
+void passByReferenceUsingRefVar(int &x)
+{
     x = x + 10;
     cout << "Inside passByReferenceUsingRefVar (with reference): " << x << endl;
 }
 
-int main() {
+int main()
+{
     int a = 5;
 
     // 1. Memory Address
@@ -24,7 +28,7 @@ int main() {
     cout << "Address of a (&a): " << &a << endl;
 
     // 2. Pointer Declaration and Initialization
-    int* ptr = &a; // 'ptr' holds address of 'a'
+    int *ptr = &a; // 'ptr' holds address of 'a'
     cout << "Pointer ptr holds address: " << ptr << endl;
 
     // 3. Dereferencing
@@ -43,7 +47,7 @@ int main() {
     cout << "After passByReference, a: " << a << endl;
 
     // 7. Reference Variables
-    int& ref = a;  // 'ref' is another name for 'a'
+    int &ref = a; // 'ref' is another name for 'a'
     ref = 100;
     cout << "After modifying ref (reference variable), a: " << a << endl;
 
