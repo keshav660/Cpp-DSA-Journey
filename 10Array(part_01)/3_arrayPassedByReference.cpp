@@ -7,7 +7,7 @@ void func2(int *arr){
     arr[0] = 20000 ;
 }
 
-void pa(int arr[] , int n ){
+void pa(int *arr , int n ){
    
     for (int i = 0; i < n ; i++)
   {
@@ -15,6 +15,17 @@ void pa(int arr[] , int n ){
   }
 
 }
+// we can use this also ; 
+/*
+void pa(int arr[] , int n ){
+   
+  for (int i = 0; i < n ; i++)
+{
+  cout<< "\n"<<arr[i];
+}
+
+}
+*/
 int main()
 {
 // make an array ; 
