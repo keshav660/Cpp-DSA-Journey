@@ -1,4 +1,4 @@
-//  https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+////  https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 
 #include <iostream>
 #include <climits>  // for INT_MAX
